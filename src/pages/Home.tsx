@@ -1,4 +1,4 @@
-import { ArrowRight, Atom, Bot, Building2, KeyRound, Sparkles } from "lucide-react";
+import { ArrowRight, Atom, Bot, Boxes, Building2, KeyRound, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import DivisionCard from "@/components/DivisionCard";
 
@@ -51,7 +51,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <DivisionCard
             name="EzIndustrion"
             tagline="Boarding house management"
@@ -89,6 +89,15 @@ export default function Home() {
             icon={Bot}
             accent="violet"
           />
+          <DivisionCard
+            name="Other Software"
+            tagline="Independent software"
+            description="Useful software products from Azza Corporation, starting with EzPrayer for Windows."
+            status="In Development"
+            to="/other-software"
+            icon={Boxes}
+            accent="cyan"
+          />
         </div>
       </section>
 
@@ -111,7 +120,7 @@ export default function Home() {
             </div>
             <div className="rounded-2xl border border-white/5 bg-space/60 p-6">
               <p className="text-xs font-semibold uppercase tracking-wider text-dust">Divisions</p>
-              <p className="mt-1 font-heading text-2xl font-bold text-bone">4 active horizons</p>
+              <p className="mt-1 font-heading text-2xl font-bold text-bone">5 horizons</p>
             </div>
             <div className="rounded-2xl border border-white/5 bg-space/60 p-6">
               <p className="text-xs font-semibold uppercase tracking-wider text-dust">Philosophy</p>

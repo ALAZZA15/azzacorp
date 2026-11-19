@@ -2,7 +2,7 @@
 
 **One sky, many stars.**
 
-The official landing page for **Azza Corporation** — a holding company for independent digital products. This site introduces our divisions, tells our story, and provides a gateway to each product: EzIndustrion, EzOrb, Smart Key, and Azza AI.
+The official landing page for **Azza Corporation** — a holding company for independent digital products. This site introduces our divisions, tells our story, and provides a gateway to each product: EzIndustrion, EzOrb, Smart Key, Azza AI, and Other Software.
 
 ---
 
@@ -22,6 +22,9 @@ This landing page is the front door: a single place where visitors can discover 
 | **EzOrb** | A Linux distribution built from the ground up — custom kernel, package manager, and clear UX. | In Development |
 | **Smart Key** | An Android application that turns your phone into a smart access key. | In Development |
 | **Azza AI** | Purpose-built AI agents that work quietly in the background. | Planned |
+| **Other Software** | Independent software products, starting with EzPrayer for Windows. | In Development |
+
+EzPrayer's download link expects a GitHub Release asset named `EzPrayer-Setup-1.0.0.exe` in [ALAZZA15/ezprayer](https://github.com/ALAZZA15/ezprayer/releases). Publish that asset for the download link to work.
 
 ---
 
@@ -63,10 +66,12 @@ azzacorp/
 │   │   └── utils.ts             # cn() helper
 │   ├── pages/
 │   │   ├── Home.tsx             # Landing (hero, divisions, about, CTA)
+│   │   ├── OtherSoftware.tsx    # Other Software products and EzPrayer download
 │   │   └── Placeholder.tsx      # /ezorb, /smartkey, /ai
 │   ├── App.tsx                  # Routes
 │   ├── index.css                # Tailwind + cosmic theme
-│   └── main.tsx                 # Entry point
+│   ├── main.tsx                 # Entry point
+│   └── vite-env.d.ts            # Vite client types
 ├── index.html
 ├── tailwind.config.js
 ├── vite.config.ts
@@ -152,6 +157,15 @@ Open http://localhost:5174
 | `npm run build` | Build for production into `dist/` |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Run Oxlint |
+
+---
+
+## Deploying to Vercel
+
+1. Push the project to GitHub.
+2. In Vercel, choose **Add New → Project** and import the `azzacorp` repository.
+3. Use `npm run build` as the build command and `dist` as the output directory.
+4. Deploy. The included `vercel.json` routes React Router paths, such as `/other-software`, back to the app.
 
 ---
 

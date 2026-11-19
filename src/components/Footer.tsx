@@ -19,6 +19,7 @@ export default function Footer() {
               <li><a href="/ezorb" className="transition-colors hover:text-cosmic">EzOrb</a></li>
               <li><a href="/smartkey" className="transition-colors hover:text-cosmic">Smart Key</a></li>
               <li><a href="/ai" className="transition-colors hover:text-cosmic">Azza AI</a></li>
+              <li><a href="/other-software" className="transition-colors hover:text-cosmic">Other Software</a></li>
             </ul>
           </div>
 

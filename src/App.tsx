@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import StarField from "@/components/StarField";
 import Home from "@/pages/Home";
+import OtherSoftware from "@/pages/OtherSoftware";
 import Placeholder from "@/pages/Placeholder";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/other-software" element={<OtherSoftware />} />
             <Route
               path="/ezorb"
               element={
