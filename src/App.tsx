@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -5,6 +6,14 @@ import StarField from "@/components/StarField";
 import Home from "@/pages/Home";
 import OtherSoftware from "@/pages/OtherSoftware";
 import Placeholder from "@/pages/Placeholder";
+
+function EzOrbRedirect() {
+  useEffect(() => {
+    window.location.replace("https://ezorb-pm-q3kx.vercel.app/");
+  }, []);
+
+  return null;
+}
 
 export default function App() {
   return (
@@ -16,17 +25,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/other-software" element={<OtherSoftware />} />
-            <Route
-              path="/ezorb"
-              element={
-                <Placeholder
-                  title="EzOrb"
-                  tagline="A Linux distribution"
-                  description="A distro built from the ground up — custom kernel, package manager, and a clear user experience. Currently in active development."
-                  accent="cyan"
-                />
-              }
-            />
+            <Route path="/ezorb" element={<EzOrbRedirect />} />
             <Route
               path="/smartkey"
               element={

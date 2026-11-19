@@ -16,7 +16,7 @@ export default function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-wider text-dust">Divisions</h4>
             <ul className="mt-4 space-y-2 text-sm text-bone/80">
               <li><a href="/ezindustrion" className="transition-colors hover:text-cosmic">EzIndustrion</a></li>
-              <li><a href="/ezorb" className="transition-colors hover:text-cosmic">EzOrb</a></li>
+              <li><a href="https://ezorb-pm-q3kx.vercel.app/" target="_blank" rel="noreferrer" className="transition-colors hover:text-cosmic">EzOrb</a></li>
               <li><a href="/smartkey" className="transition-colors hover:text-cosmic">Smart Key</a></li>
               <li><a href="/ai" className="transition-colors hover:text-cosmic">Azza AI</a></li>
               <li><a href="/other-software" className="transition-colors hover:text-cosmic">Other Software</a></li>

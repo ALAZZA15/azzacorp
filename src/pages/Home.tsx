@@ -1,5 +1,4 @@
 import { ArrowRight, Atom, Bot, Boxes, Building2, KeyRound, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
 import DivisionCard from "@/components/DivisionCard";
 
 export default function Home() {
@@ -67,7 +66,8 @@ export default function Home() {
             tagline="A Linux distribution"
             description="A distro built from the ground up — custom kernel, package manager, and a clear user experience."
             status="In Development"
-            to="/ezorb"
+            to="https://ezorb-pm-q3kx.vercel.app/"
+            external
             icon={Atom}
             accent="cyan"
           />
@@ -140,12 +140,14 @@ export default function Home() {
             Each division has its own story. Pick one to explore — or reach out and say hello.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Link
-              to="/ezorb"
+            <a
+              href="https://ezorb-pm-q3kx.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex h-11 items-center gap-2 rounded-full bg-cosmic px-6 text-sm font-semibold text-space transition-colors hover:bg-cosmic-soft"
             >
               Explore EzOrb
-            </Link>
+            </a>
             <a
               href="mailto:hello@azzacorp.com"
               className="inline-flex h-11 items-center gap-2 rounded-full border border-white/10 px-6 text-sm font-semibold text-bone transition-colors hover:border-white/30 hover:bg-white/5"
