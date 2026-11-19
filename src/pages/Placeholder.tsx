@@ -30,7 +30,7 @@ export default function Placeholder({ title, tagline, description, accent }: Pro
 
       <div className="relative mt-10 rounded-2xl border border-white/5 bg-space-soft/40 px-6 py-4 backdrop-blur">
         <p className="text-xs font-semibold uppercase tracking-wider text-dust">Status</p>
-        <p className="mt-1 font-heading text-lg font-bold text-bone">In development</p>
+        <p className="mt-1 font-heading text-lg font-bold text-bone">In Development</p>
       </div>
 
       <Link

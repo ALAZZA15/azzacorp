@@ -18,7 +18,7 @@ This landing page is the front door: a single place where visitors can discover 
 
 | Division | Description | Status |
 |---|---|---|
-| **EzIndustrion** | Boarding house (kos) management — rooms, tenants, dashboard, tenant portal. | Live |
+| **EzIndustrion** | Boarding house (kos) management — rooms, tenants, dashboard, tenant portal. | In Development |
 | **EzOrb** | A Linux distribution built from the ground up — custom kernel, package manager, and clear UX. | In Development |
 | **Smart Key** | An Android application that turns your phone into a smart access key. | In Development |
 | **Azza AI** | Purpose-built AI agents that work quietly in the background. | Planned |

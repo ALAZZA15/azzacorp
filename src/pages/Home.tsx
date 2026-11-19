@@ -55,9 +55,8 @@ export default function Home() {
             name="EzIndustrion"
             tagline="Boarding house management"
             description="Rooms, tenants, dashboard, and tenant portal — calm property management for Indonesian kos."
-            status="Live"
-            to="http://localhost:5173"
-            external
+            status="In Development"
+            to="/ezindustrion"
             icon={Building2}
             accent="lime"
           />

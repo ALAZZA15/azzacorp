@@ -27,6 +27,17 @@ export default function App() {
             <Route path="/other-software" element={<OtherSoftware />} />
             <Route path="/ezorb" element={<EzOrbRedirect />} />
             <Route
+              path="/ezindustrion"
+              element={
+                <Placeholder
+                  title="EzIndustrion"
+                  tagline="Boarding house management"
+                  description="EzIndustrion is currently in development and has not been released yet. Check back soon for updates."
+                  accent="cyan"
+                />
+              }
+            />
+            <Route
               path="/smartkey"
               element={
                 <Placeholder
