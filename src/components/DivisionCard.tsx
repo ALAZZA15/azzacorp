@@ -3,11 +3,13 @@ import { ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+type DivisionStatus = "Live" | "In Development" | "Planned";
+
 interface Props {
   name: string;
   tagline: string;
   description: string;
-  status: "Live" | "In Development" | "Planned";
+  status?: DivisionStatus;
   to: string;
   icon: LucideIcon;
   accent: "lime" | "cyan" | "mars" | "violet";
@@ -21,7 +23,7 @@ const ACCENT: Record<Props["accent"], { glow: string; ring: string; text: string
   violet: { glow: "from-violet-400/20", ring: "ring-violet-400/30", text: "text-violet-400", bg: "bg-violet-400/10" },
 };
 
-const STATUS_STYLE: Record<Props["status"], string> = {
+const STATUS_STYLE: Record<DivisionStatus, string> = {
   Live: "bg-emerald-400/10 text-emerald-300 ring-emerald-400/30",
   "In Development": "bg-amber-400/10 text-amber-300 ring-amber-400/30",
   Planned: "bg-dust/10 text-dust ring-dust/20",
@@ -42,9 +44,11 @@ export default function DivisionCard({ name, tagline, description, status, to, i
         <span className={cn("grid size-12 place-items-center rounded-xl ring-1", a.bg, a.ring)}>
           <Icon className={cn("size-6", a.text)} />
         </span>
-        <span className={cn("rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ring-1", STATUS_STYLE[status])}>
-          {status}
-        </span>
+        {status && (
+          <span className={cn("rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ring-1", STATUS_STYLE[status])}>
+            {status}
+          </span>
+        )}
       </div>
 
       <h3 className="relative mt-6 font-heading text-2xl font-bold text-bone">{name}</h3>

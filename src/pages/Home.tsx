@@ -65,7 +65,6 @@ export default function Home() {
             name="EzOrb"
             tagline="A Linux distribution"
             description="A distro built from the ground up — custom kernel, package manager, and a clear user experience."
-            status="In Development"
             to="https://ezorb-pm-q3kx.vercel.app/"
             external
             icon={Atom}
@@ -93,7 +92,6 @@ export default function Home() {
             name="Other Software"
             tagline="Independent software"
             description="Useful software products from Azza Corporation, starting with EzPrayer for Windows."
-            status="In Development"
             to="/other-software"
             icon={Boxes}
             accent="cyan"
